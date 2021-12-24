@@ -9,22 +9,25 @@
         *{
             margin: 0px;
         }
+        .header-section{
+            z-index: 2;
+        }
         li{
             display: inline;
             list-style: none;
         }
         a{
             text-decoration: none;
-            color: black;
+            color: white;
         }
         .row{
             display: flex;
-            /* background-color: rgba(240, 238, 233, 0.432); */
-            /* opacity: 0.75; */
-        }
+            background-color: black; 
+             opacity: 0.85;
+         } 
         .logo{
             margin-right: 200px;
-            /* border: 2px solid red; */
+            /* border: 2px solid red;  */
         }
         .nav{
             text-align: center;
@@ -37,7 +40,9 @@
         }
         .img{
             opacity: 0.95;
-            
+            position: relative;
+            top: -81px;
+            z-index: -1;
         }
     </style>
 </head>
