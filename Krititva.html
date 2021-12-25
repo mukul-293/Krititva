@@ -44,14 +44,50 @@
             font-family: 'Staatliches', cursive;
             margin: 16px;
             font-size: 40px;
-            font-weight: bold;
+            /* font-weight: bold; */
         }
         .img{
-            opacity: 0.9;
+            opacity: 0.6;
             position: relative;
             top: -81px;
             z-index: -1;
         }
+        .quote{
+            text-align: center;
+            margin: -408px auto;
+            font-size: 48px;
+        }
+        .quote::after{
+            content: "— Georgia O’Keeffe";
+            font-size: 22px;
+            position: relative;
+            top: 20px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        .content-item{
+            position: relative;
+            top: 544px;
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid black; */
+            margin: 0px 30px;
+        }
+        .cards{
+            position: relative;
+            top: -2px;
+            left: -32px;
+            border: 10px solid rgb(75, 74, 74);
+        }
+        .context{
+            text-align: center;
+        }  
+        .context h3{
+            text-align: center;
+            font-size: 23px;
+        }  
     </style>
 </head>
 <body>
@@ -73,7 +109,33 @@
     </header>
     <section class="background">
         <div class="img"><img src="/jayshree-sharma-gyOy1KgfMB4-unsplash.jpg" alt="" style="width: 100%; height: 600px;" ></div>
-
+        <p class="quote" >“I found I could say things with color and shapes that I couldn’t say any other way—things I had no words for.”
+        </p>  
     </section>
+    <div class="content">
+        <div class="content-item"><img src="/Drawings/Art & Sprituality.jpg" alt="" class="content-item cards">
+            <div class="context">
+                <h2>Art and Sprituality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto!</p>
+            </div>
+        </div>
+
+            
+        
+        <div class="content-item"> <img src="/Drawings/Mandala.jpg" alt="" class="content-item cards"> 
+            <div class="context">
+                <h2>Mandala Art</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, accusamus.</p>
+            </div>
+        </div>
+        <div class="content-item"> <img src="/Drawings/Understanding Colors.jpg" alt="" class="content-item cards"> 
+            <div class="context">
+                <h3>Appreciating Colors</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, eius?</p>
+            </div>
+        
+        </div>
+    </div>
+
 </body>
 </html>
